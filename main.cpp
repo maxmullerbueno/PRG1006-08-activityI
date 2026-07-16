@@ -15,3 +15,16 @@ public:
         cout << "Random Number: " << this->number << endl;
     }
 };
+
+int main()
+{
+    /* initialize random seed: */
+    srand(time(0));
+
+    RandomNumber random;
+
+    random.generate();
+    random.display();
+
+    return 0;
+}
