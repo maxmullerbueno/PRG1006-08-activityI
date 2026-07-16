@@ -7,12 +7,19 @@ private:
     int number;
     
 public:
-    void generate()
+    RandomGenerator()
     {
+        randomNumber = 0;
+    }
 
-    void display()
+    void generateNumber()
     {
-        cout << "Random Number: " << this->number << endl;
+        this->randomNumber = rand() % 10 + 1;
+    }
+
+    void displayNumber()
+    {
+        cout << "Random Number: " << this->randomNumber << endl;
     }
 };
 
